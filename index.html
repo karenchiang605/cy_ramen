@@ -841,6 +841,11 @@
                 goToTop();
                 return false;
             });
+            resizeMapAdd()
+
+            $(window).on('resize', function () {
+                resizeMapAdd()
+            });
         });
 
         $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
@@ -853,11 +858,6 @@
 
         $('#cover').height($(window).height());
 
-        resizeMapAdd()
-
-        $(window).on('resize', function () {
-            resizeMapAdd()
-        });
         function resizeMapAdd() {
             if ($('.mapbg img').is(':visible')) {
                 $('.mapadd').height($('.mapbg img').height()).css('overflow-y', 'scroll');

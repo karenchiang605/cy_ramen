@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.tutorialjinni.com/jarallax/1.12.5/jarallax.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="wickedcss.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <a href="#" class="back-to-top btn btn-info btn-xl back-to-top btn-circle btn-lg d-none d-sm-block" role="button"><i
+            class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top btn btn-info btn-xl back-to-top btn-circle d-sm-none" role="button"><i
+            class="fa fa-chevron-up"></i></a>
+    <div id="cover" class="position-relative jarallax" data-jarallax>
+        <img class="jarallax-img" src="/images/index1.jpg" alt="" width="100%">
+        <div class="logo position-absolute"><img src="/images/logo0305.png" alt width="150"></div>
+        <div class="d-flex justify-content-center">
+            <h1 class="sloganmobile position-absolute p-3 d-block d-xl-none">
+                <div>保持理想的『初』心、堅持食材的『原』味來料理每一碗拉麵</div>
+            </h1>
+            <h1 class="slogan position-absolute p-3 d-none d-xl-block">
+                <div>保持理想的『初』心、堅持食材的『原』味來料理每一碗拉麵</div>
+            </h1>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light title position-sticky">
+        <div class="titlelogo px-2"><img src="/images/logo0305.png" alt="" width="50"></div>
+        <!-- 1. 按鈕角色、3. 定義按鈕能觸發選單、4. 建立選單與按鈕之間的關聯 -->
+        <!-- a. 注意細節: aria-label -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 5. 沒有選單角色 -->
+        <div class="collapse navbar-collapse d-sm-flex justify-content-end" id="navbarNavAltMarkup">
+            <ul id="nav" class="nav d-flex justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link px-2 active" href="#section1">屋台之味</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#section2">用餐特色</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#section3">好評不斷</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#section4">店鋪資訊</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="section1" class="food container-fluid overflow-hidden py-5 pt-5">
+        <div class="row">
+            <div class="col-xl-6 foodimgs no-gutters position-relative d-none d-xl-block">
+                <div class="col-xl-6 position-absolute food3" data-aos="fade-up-right"><img src="/images/food2.jpg" alt
+                        width="100%"></div>
+                <div class="col-xl-5 position-absolute food2" data-aos="fade-down-left"><img src="/images/food3.jpg" alt
+                        width="100%"></div>
+                <div class="col-xl-8 position-absolute food1" data-aos="fade-down-right"><img src="/images/food1.jpg"
+                        alt width="100%"></div>
+            </div>
+            <div class="position-relative carousel slide  d-xl-none" id="carouselFoodIndicators" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselFoodIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselFoodIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselFoodIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 sopimg" src="/images/food11.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 sopimg" src="/images/food22.png" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 sopimg" src="/images/food33.png" alt="">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselFoodIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselFoodIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="col-xl-6 foodmenu px-lg-5 py-5 py-xl-0">
+                <div class="row">
+                    <div class="col-md-12 p-2 foodtype">拉麵 ラーメン</div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic"><img src="/images/ramen1.png" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center p-3">
+                                <div class="card-text1">焙煎醬油豚骨拉麵</div>
+                                <div class="card-text1">$240元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic"><img src="/images/ramen2.png" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center p-3">
+                                <div class="card-text1">焙煎雞白湯拉麵</div>
+                                <div class="card-text1">$240元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic"><img src="/images/ramen3.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center p-3">
+                                <div class="card-text1" style="margin: 0;">天使海老味增拉麵</div>
+                                <div class="card-text1">$240元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic"><img src="/images/ramen4.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center p-3">
+                                <div class="card-text1">山椒南瓜叉燒拉麵</div>
+                                <div class="card-text1">$190元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic"><img src="/images/ramen5.png" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center p-3">
+                                <div class="card-text1">焦蒜黑麻油拉麵</div>
+                                <div class="card-text1">$190元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic"><img src="/images/ramen6.png" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center p-3">
+                                <div class="card-text1">馬告魚白湯拉麵</div>
+                                <div class="card-text1">$200元</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="foodtype col-md-12 p-2 mt-5">單品 たんぴん</div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic">
+                                <img src="/images/one1.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="card-text1">替え玉 加麵</div>
+                                <div class="card-text1">$30元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic">
+                                <img src="/images/one2.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="card-text1">糖心蛋</div>
+                                <div class="card-text1">$30元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic">
+                                <img src="/images/one3.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="card-text1">叉燒2片</div>
+                                <div class="card-text1">$40元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic">
+                                <img src="/images/one5.png" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="card-text1">出汁雞唐揚</div>
+                                <div class="card-text1">$50元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic">
+                                <img src="/images/one6.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="card-text1">起司可樂餅</div>
+                                <div class="card-text1">$60元</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 p-2">
+                        <div class="card shadow rounded">
+                            <div class="pic">
+                                <img src="/images/one4.jpg" class="card-img-top" alt width="100%">
+                            </div>
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <div class="card-text1">和牛肉餅</div>
+                                <div class="card-text1">$80元</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section2">
+        <div class="sopbg position-relative carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 sopimg" src="/images/bg31.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 sopimg" src="/images/bg322.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 sopimg" src="/images/bg3333.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 sopimg" src="/images/bg344.png" alt="">
+                </div>
+            </div>
+            <div class="container-fluid d-lg-none no-gutters p-0">
+                <div class="row sopnavbar no-gutters">
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start active"
+                        data-target="#carouselExampleIndicators" data-slide-to="0">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            1
+                        </div>
+                        <div class="soptxt ml-4 mt-2">與人員確認是否有座位</div>
+                    </div>
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start"
+                        data-target="#carouselExampleIndicators" data-slide-to="1">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            2
+                        </div>
+                        <div class="soptxt ml-4 mt-2">餐卷機點餐</div>
+                    </div>
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start"
+                        data-target="#carouselExampleIndicators" data-slide-to="2">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            3
+                        </div>
+                        <div class="soptxt ml-4 mt-2">依票券序號叫號取餐</div>
+                    </div>
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start"
+                        data-target="#carouselExampleIndicators" data-slide-to="3">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            4
+                        </div>
+                        <div class="soptxt ml-4 mt-2">用餐完畢後餐具請回收</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  d-none d-lg-block">
+                <div class="row sopnavbar position-absolute">
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start active"
+                        data-target="#carouselExampleIndicators" data-slide-to="0" data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            1
+                        </div>
+                        <div class="soptxt ml-4 mt-2">與人員確認是否有座位</div>
+                    </div>
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start"
+                        data-target="#carouselExampleIndicators" data-slide-to="1" data-aos="fade-up"
+                        data-aos-duration="2000">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            2
+                        </div>
+                        <div class="soptxt ml-4 mt-2">餐卷機點餐</div>
+                    </div>
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start"
+                        data-target="#carouselExampleIndicators" data-slide-to="2" data-aos="fade-down"
+                        data-aos-duration="2000">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            3
+                        </div>
+                        <div class="soptxt ml-4 mt-2">依票券序號叫號取餐</div>
+                    </div>
+                    <div class="col-lg-3 sopcard p-3 d-flex justify-content-start"
+                        data-target="#carouselExampleIndicators" data-slide-to="3" data-aos="fade-down"
+                        data-aos-duration="2000">
+                        <div class="circle d-flex align-items-center justify-content-center soptxt">
+                            4
+                        </div>
+                        <div class="soptxt ml-4 mt-2">用餐完畢後餐具請回收</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="section3">
+        <div class="like container-fluid position-relative">
+            <div class="likecontainer w-100 py-5">
+                <div class="container-xl">
+                    <div class="likebtn d-flex justify-content-between">
+                        <div></div>
+                        <div class="likebtn1 d-flex justify-content-center">
+                            <div><img src="/images/goodimages.png" alt width="50px"></div>
+                            <div class="likelike mt-1">好評不斷</div>
+                        </div>
+                        <div class="likebtn2 d-flex justify-content-end align-self-end mx-2">
+                            <div class="likebuttn" data-id="1"></div>
+                            <div class="likebuttn ml-2" data-id="2"></div>
+                        </div>
+                    </div>
+                    <div class="likecard row no-gutters" data-id="1">
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good1.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">Summer Liu</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">3天前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        雞白湯鹹香順口不油膩，叉燒加到雞白湯吃進嘴裡有微微的焦香味，目前吃過最好吃的叉燒之一，一定會再訪！
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good3.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">余子銓</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">1週前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">推薦雞白湯拉麵，叉燒肉也很好吃。下次想試試味增拉麵，同行的朋友說非常好吃。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good9.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">Yu Lin Lee</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">5個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">雞湯鹹度洽恰好喝起來有燒烤味，肉片炙燒而成 ，溏心蛋非常入味，整體覺得很棒（贏過台北很多拉麵店）❤️。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good11.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">Alice Tsai</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">4個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        焙煎過的雞白湯拉麵，湯頭香氣濃郁味道醇厚，麵條小孩吃的蠻順口的😋，叉燒肉也很好吃👍🏻👍🏻。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good15.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">慕綾</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">6個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">湯頭濃郁，叉燒有稍微炙燒過味道很香，雞白湯的湯頭不會過鹹味道很棒💕很好吃👍總體來說非常棒🌹。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good18.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">Arina的異想世界</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">2天前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">每天限量, 雞白湯很濃郁, 叉燒經過炙燒風味十足,口感都很滑順,裝潢環境走一個簡單風。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="likecard row no-gutters" data-id="2" data-aos="fade-down" style="display:none;">
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good5.png" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">joan liu</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">6個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">味增豚骨風味濃厚溫潤加上特製辣醬風味更佳，鹹度適合台灣人愛喝湯習慣，不像日本極鹹不好入口！
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good8.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">zi xuan Lin</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">3天前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">湯頭濃郁叉燒炙燒的很香嫩，炸物金黃酥脆外酥內軟，親切老闆介紹的很詳細，以日式拉麵來說不貴！
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good20.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">YIHSI</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">1個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">湯頭很濃郁，拉麵麵條也有嚼勁，重要的是上面的叉燒真的超香的啦🤩🤩根本就加分加分👍。
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good7.png" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">pei-shan hsieh</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">1週前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">叉燒炙燒很香，雞白湯很清爽不膩湯頭很特別～麵條也是我愛的細麵，每次來都吃光❤️。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good6.png" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">Ike lo</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">2個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">特盛雞白湯非常好吃，炙燒過後的叉燒讓湯的風味變得香又濃厚，卻不會過於膩口，超級推薦。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card m-2 shadow rounded">
+                                <div class="liketitle d-flex justify-content-start p-2">
+                                    <div class="likecardimg"><img src="/images/good14.jpg" alt height="100%"></div>
+                                    <div class="likename px-3">
+                                        <div class="my-2">潘麒鈞</div>
+                                        <div class="d-flex justify-content-start">
+                                            <div class="stars pr-1">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                                <img src="/images/images.png" alt width="20">
+                                            </div>
+                                            <div class="liketxt">8個月前</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">初原麵場最接近日本的味道，喝到濃郁的湯底，回憶起過去在日本吃拉麵🍜的味道，真心推薦。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="position-absolute likecat1 d-none d-xl-block" data-aos="fade-down-right"><img class="floater"
+                    src="/images/catcat2.png" alt="" width="350"></div>
+            <div class="position-absolute likecat2 d-none d-xl-block" data-aos="fade-up"><img src="/images/catcat1.png"
+                    alt="" class="wiggle">
+            </div>
+            <div class="position-absolute likeraman1 d-none d-xl-block" data-aos="fade-up-right"><img
+                    src="/images/313raman1.png" alt="" width="100" class="heartbeat"></div>
+            <div class="position-absolute likeraman d-none d-xl-block" data-aos="fade-down-left"><img
+                    src="/images/314ramen.png" alt="" width="250" class="wiggle">
+            </div>
+        </div>
+    </div>
+    <div id="section4" class="map">
+        <div class="d-xl-none">
+            <img src="/images/mapimg.jpg" alt="" width="100%">
+        </div>
+        <div class="container-fluid py-5">
+            <div class="mapaddimg row">
+                <div class="mapadd col-xl-5 custom-scrollbar-css">
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">三峽店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:02 2672 1670 <br />地址:新北市三峽區長福街10號3樓</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="0">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">新莊丹鳳店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:02 2901 9098<br />地址:新北市新莊區福營路385號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="1">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">新板特區店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:02 2963 1360<br />地址:新北市板橋區漢生東路117-2號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="2">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">竹北光明店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:03 558 6659<br />地址:新竹縣竹北市光明六路89號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="3">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">豐原向陽店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:04 2528 1200<br />地址:台中市豐原區向陽路23號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="4">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">龜山中興店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:03 350 5066<br />地址:桃園市龜山區中興路364號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="5">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">宜蘭宜中店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:03 933 2966<br />地址:宜蘭縣宜蘭市宜中路216號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="6">map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bglightcoffee p-3">
+                        <div class="cardbody">
+                            <h5 class="card-title storetitle mb-0">汐止工建店</h5>
+                            <hr />
+                            <div class="apptext">
+                                <p>TEL:02 2642 1256<br />地址:新北市汐止區工建路40號</p>
+                                <a href="#" class="card-link" data-toggle="modal" data-target="#myModal"
+                                    data-id="7">map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mapbg col-xl-7 d-none d-xl-block">
+                    <img src="/images/mapimg.jpg" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer d-flex justify-content-center">
+        <div class="py-3 card-text">Copyright © 初原麵館 All Rights Reserved</div>
+        <div class="py-2"><img src="/images/facebook.png" alt width="40px"></div>
+
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <iframe data-id="0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.95318334796!2d121.36790031524566!3d24.933664748459634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681b63689793f9%3A0xe3102bc238284f24!2z5Yid5Y6f6bq15aC0!5e0!3m2!1szh-TW!2stw!4v1615479359279!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="1"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.198616871079!2d121.42059031524695!3d25.027332844712113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a71c00bb0039%3A0xf9e0553476bfae4a!2z5Yid5Y6f6bq15aC0KOaWsOiOiuS4uemzs-W6lyk!5e0!3m2!1szh-TW!2stw!4v1615479296343!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="2"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.5664190139914!2d121.46538231524664!3d25.014844845212465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a95b04a9e77f%3A0xf273453a869bba0d!2z5Yid5Y6f6bq15aC0KOaWsOadv-eJueWNgOW6lyk!5e0!3m2!1szh-TW!2stw!4v1615479201353!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="3"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.099781939899!2d121.00697321524406!3d24.82626105274098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346837579d7afabf%3A0xd119d258f99db965!2z5Yid5Y6f6bq15aC0KOerueWMl-WFieaYjuW6lyk!5e0!3m2!1szh-TW!2stw!4v1615479078099!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3637.7068273021114!2d120.71936731523631!3d24.25203057534403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691b05568620df%3A0x819c5f3c4b6c0045!2z5Yid5Y6f6bq15aC0KOixkOWOn-WQkemZveW6lyk!5e0!3m2!1szh-TW!2stw!4v1615478989091!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="5"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.2440524392277!2d121.33325131524641!3d24.991821846134442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681fa010f4f159%3A0x45461a3261ec5b2b!2z5Yid5Y6f6bq15aC0KOm-nOWxseS4reiIiOW6lyk!5e0!3m2!1szh-TW!2stw!4v1615478817927!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="6"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3623.313507259467!2d121.74169131524317!3d24.750437855753344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3467e5cbb8b81e4f%3A0xa2b069348fbf3e!2z5Yid5Y6f6bq15aC0KOWunOiYreWunOS4reW6lyk!5e0!3m2!1szh-TW!2stw!4v1615478445890!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe data-id="7"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.140960694295!2d121.63929031524741!3d25.063211043273267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d531eb6cad2ad%3A0x3f702a797bd18826!2z5Yid5Y6f6bq15aC0KOaxkOatouW3peW7uuW6lyk!5e0!3m2!1szh-TW!2stw!4v1615478574388!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.tutorialjinni.com/jarallax/1.12.5/jarallax.min.js"></script>
+    <script src="//maps.googleapis.com/maps/api/js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/jquery-nav.js"></script>
+    <script>
+        AOS.init();
+        function goToTop() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 400);
+        }
+        $('.carousel').carousel({
+            interval: 3000
+        });
+
+        $(document).ready(function () {
+            $('#nav').onePageNav();
+            $('.titlelogo').on('click', function () {
+                goToTop();
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('.back-to-top').click(function () {
+                goToTop();
+                return false;
+            });
+        });
+
+        $('#carouselExampleIndicators').on('slide.bs.carousel', function (e) {
+            $(this).find("[data-slide-to]").removeClass("active");
+            $(this).find("[data-slide-to=" + e.to + "]").addClass("active");
+            // console.log(e.to);
+            // console.log($(this).find("[data-slide-to=" + e.to + "]").get(0));
+            // do something…
+        })
+
+        $('#cover').height($(window).height());
+
+        resizeMapAdd()
+
+        $(window).on('resize', function () {
+            resizeMapAdd()
+        });
+        function resizeMapAdd() {
+            if ($('.mapbg img').is(':visible')) {
+                $('.mapadd').height($('.mapbg img').height()).css('overflow-y', 'scroll');
+            } else {
+                $('.mapadd').height('auto').css('overflow', 'hidden');
+            }
+        }
+
+        $('.like .likebuttn').click(function () {
+            let clickid = $(this).data('id');
+            if ($('.like .likecard:visible').data('id') != clickid) {
+                $('.like .likecard:visible').fadeOut("fast", function () {
+                    $('.like .likecard[data-id=' + clickid + ']').fadeIn("fast");
+                });
+            }
+        });
+
+        $(document).ready(function () {
+            var map = null;
+            var myMarker;
+            var myLatlng;
+
+
+            // Re-init map before show modal
+            $('#myModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                $(this).find('iframe').hide();
+                $(this).find('iframe[data-id="' + button.data('id') + '"]').show();
+                //initializeGMap(button.data('lat'), button.data('lng'));
+            });
+
+            // Trigger map resize event after modal shown
+            $('#myModal').on('shown.bs.modal', function () {
+                google.maps.event.trigger(map, "resize");
+                map.setCenter(myLatlng);
+            });
+        });
+    </script>
+</body>
+
+</html>

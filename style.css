@@ -125,7 +125,7 @@ h1.slogan div {
 .storetitle {
     height:28px;
     padding-left: 50px;
-    background-image: url(/images/mapicon.png);
+    background-image: url(./images/mapicon.png);
     background-position: left; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain; /* Resize the background image to cover the entire container */
